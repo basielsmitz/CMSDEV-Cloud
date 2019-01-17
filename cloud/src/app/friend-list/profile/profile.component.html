@@ -1,0 +1,21 @@
+
+    <div class="container" *ngIf="user">
+        <div class="scrollable profile">
+          <div class="content">
+              <div class="image-container">
+                  <img [src]="user.userImage" [alt]="user.name">
+              </div>
+                <h1>{{user.name}}</h1>
+                <h3>School</h3>
+                <p>{{user.school}}</p>
+                <h3>Adres</h3>
+                <p>{{user.adresStreet}}</p>
+                <p>{{user.adresPostal}} {{user.adresCity}}</p>
+                <h3>Type slaper</h3>
+                <p>{{user.type}}</p>
+                <h3>Slaap doelstelling</h3>
+                <p>{{user.goal}} uur / nacht</p>
+          </div>
+
+        </div>
+      </div>

@@ -1,0 +1,22 @@
+
+<div class="container">
+  <div class="scrollable friends">
+    <div
+        style="height: 500px;"
+        leaflet
+        [leafletOptions]="options"
+        [leafletLayers]="markers"
+      ></div>
+    <div class="content">
+      <ul>
+        <li *ngFor="let friend of friends">
+          <a routerLink="/friends/{{ friend.attributes.uuid }}">
+            {{ friend.attributes.field_first_name }}
+            {{ friend.attributes.field_last_name }}
+          </a>
+        </li>
+      </ul>
+        <a routerLink="/friends/school">meer studenten van {{ school }}</a>
+    </div>
+  </div>
+</div>

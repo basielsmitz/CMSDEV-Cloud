@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="scrollable friends">
+      <div class="content">
+        <h1>Medestudenten</h1>
+          <ul *ngIf="filteredStudents" >
+            <li *ngFor="let student of filteredStudents" >
+              <a (click)="addFriend(student)">{{student.attributes.field_first_name}} {{student.attributes.field_last_name}} <span>+</span></a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>

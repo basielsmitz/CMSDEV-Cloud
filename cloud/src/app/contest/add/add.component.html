@@ -1,0 +1,4 @@
+<input type="file" (change)="onNewImage($event)">
+<button  (click)="upload()">upload</button>
+<button *ngIf="canPost"  (click)="post()">post</button>
+<img *ngIf="previewSrc" [src]="previewSrc" alt="preview">

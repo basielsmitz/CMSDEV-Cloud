@@ -1,0 +1,42 @@
+
+
+
+
+<div class="container">
+  <div class="scrollable tracker">
+
+    <div class="content">
+      <h1>Slaap tracker</h1>
+      <select [(ngModel)]="selectedMonth"  (change)="changeMonth()">
+        <option *ngFor="let month of availableMonths"  [ngValue]="month.value">{{month.name}}</option>
+      </select>
+      <ul class="days">
+
+      </ul>
+      <ul>
+          <li class="day">M</li>
+          <li class="day">D</li>
+          <li class="day">W</li>
+          <li class="day">D</li>
+          <li class="day">V</li>
+          <li class="day">Z</li>
+          <li class="day">Z</li>
+        <li *ngFor="let date of currentMonth">
+          <div
+          (click)="selectLog(date)"
+          [ngClass]="setClass(date)"
+          >
+            {{date.date}}
+        </div>
+        </li>
+      </ul>
+      <hr>
+      <app-log-detail *ngIf="selectedLog" [log]="selectedLog"></app-log-detail>
+      <app-add-log (logSaved)="getLogs()" *ngIf="dateIsToday"></app-add-log>
+      <hr>
+      <a class="link" routerLink="/sleeptracker/statistics">Statistics</a>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.profile {
+  .content {
+    padding: 20px;
+    .image-container {
+      text-align: center;
+      img {
+        width: 80px;
+        height: 80px;
+        clip-path: circle(70px at center);
+      }
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<div class="addLog">
+  <div class="input-container">
+    <label for="sleepTime">Wanneer bent u gaan slapen?</label>
+    <input
+      [(ngModel)]="sleepTime"
+      type="time"
+      name="sleepTime"
+      id="sleepTime"
+    />
+  </div>
+  <div class="input-container">
+    <label for="wakeTime">Wanneer bent u opgestaan?</label>
+    <input [(ngModel)]="wakeTime" type="time" name="wakeTime" id="wakeTime" />
+  </div>
+  <div class="input-container">
+    <label for="deepSleep">in welke mate hebt u diep geslapen?</label>
+    <input
+      [(ngModel)]="deepSleep"
+      type="range"
+      min="1"
+      max="5"
+      name="deepSleep"
+      id="deepSleep"
+    />
+  </div>
+  <div class="input-container">
+    <label for="rested">in welke mate voelt u zich uitgerust?</label>
+    <input
+      [(ngModel)]="rested"
+      type="range"
+      min="1"
+      max="5"
+      name="rested"
+      id="rested"
+    />
+  </div>
+  <div class="input-container">
+    <label for="rate">Beoordeel uw nacht?</label>
+    <input
+      [(ngModel)]="rate"
+      type="range"
+      min="1"
+      max="5"
+      name="rate"
+      id="rate"
+    />
+  </div>
+  <button class="button-wide" (click)="saveLog()">save</button>
+</div>

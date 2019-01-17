@@ -1,0 +1,20 @@
+
+<div class="container" *ngIf="user && school">
+  <div class="scrollable profile">
+    <div class="content">
+        <div class="image-container">
+            <img [src]="imageUrl" [alt]="user.data.attributes.name">
+        </div>
+          <h1>{{user.data.attributes.field_first_name}} {{user.data.attributes.field_last_name}}</h1>
+          <h3>School</h3>
+          <p>{{school.name}}</p>
+          <h3>Adres</h3>
+          <p>{{user.data.attributes.field_location_street}} {{user.data.attributes.field_location_number}}</p>
+          <p>{{user.data.attributes.field_location}} {{user.data.attributes.field_location_postal}}</p>
+          <h3>Type slaper</h3>
+          <p>{{user.sleepType.attributes.name}}</p>
+          <h3>Slaap doelstelling</h3>
+          <p>{{user.data.attributes.field_goal_hours}} uur / nacht</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div *ngIf="article">
+  <div class="container">
+    <div class="scrollable profile">
+      <img [src]="article.imageUrl" [alt]="article.title" />
+      <div class="content">
+        <h3>{{ article.title }}</h3>
+        <div [innerHTML]="article.body"></div>
+      </div>
+    </div>
+  </div>
+</div>

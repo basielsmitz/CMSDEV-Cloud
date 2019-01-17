@@ -1,0 +1,11 @@
+<p>
+  login works!
+</p>
+
+<div class="card">
+  <h2>Login</h2>
+  <input [(ngModel)]="data.username" type="text" placeholder="username">
+  <input [(ngModel)]="data.password" type="password" placeholder="username">
+  <button (click)="login()">Login</button>
+  <a routerLink="/register">Register</a>
+</div>

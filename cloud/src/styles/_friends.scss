@@ -1,0 +1,38 @@
+.friends {
+  .map {
+    height: 500px;
+  }
+  .content {
+    padding: 20px;
+    text-align: center;
+    ul {
+      text-align: left;
+      li {
+        a {
+          display: block;
+          padding: 10px 10px 10px 10px;
+          border: $black 1px solid;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          cursor: pointer;
+          position: relative;
+          span {
+            text-align: right;
+            font-size: 24pt;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+          }
+        }
+
+      }
+    }
+    > a {
+      text-align: center;
+      color: $green;
+    }
+  }
+}

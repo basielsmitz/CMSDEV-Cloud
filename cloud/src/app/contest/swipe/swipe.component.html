@@ -1,0 +1,15 @@
+
+<div class=" swipe" *ngIf="currentEntry" >
+    <div class="container">
+        <div >
+          <div class="content">
+              <img [src]="currentEntry.imageUrl" [alt]="">
+              <div class="buttons">
+                  <button class="no" (click)="next()">no</button><button class="yes" (click)="like()">yes</button>
+              </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+

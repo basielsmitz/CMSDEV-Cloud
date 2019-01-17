@@ -1,0 +1,11 @@
+<div *ngIf="tip">
+  <div class="container">
+    <div class="scrollable profile">
+      <div class="content">
+        <h3>{{ tip.title }}</h3>
+        <div [innerHTML]="tip.body"></div>
+        <a *ngFor="let link of tip.links" [href]="link.uri">{{ link.title }}</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="scrollable contest">
+    <div class="content">
+      <a class="swipe-button" routerLink="/contest/swipe">Swipe Inzendingen</a>
+      <a class="swipe-button" routerLink="/contest/add">Doe mee</a>
+      <ul>
+        <li class="entry" *ngFor="let entry of entries">
+          <img [src]="entry.imageUrl" alt="entry" />
+          <div class="info">
+            <span class="user">
+              {{ entry.user.field_first_name }} {{ entry.user.field_last_name }}
+            </span>
+            <span class="likes">{{ entry.likes.length }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

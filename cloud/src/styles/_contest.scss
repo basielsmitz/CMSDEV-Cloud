@@ -1,0 +1,42 @@
+.contest {
+  .content {
+    padding: 20px;
+    text-align: center;
+    .swipe-button {
+      border: 2px solid $green;
+      font-size: 16pt;
+      border-radius: 15px;
+      padding: 5px;
+      color: $green;
+      margin-bottom: 15px;
+    }
+    a  {
+      display: block;
+    }
+    .entry {
+      margin-bottom: 20px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .info {
+        position: absolute;
+        bottom:5px;
+        height: 20px;
+        left :0;
+        right: 0;
+        background: $black;
+        color: $white;
+        padding: 10px;
+        .user {
+          float: left;
+        }
+        .likes {
+          float: right;
+        }
+      }
+    }
+
+  }
+
+}

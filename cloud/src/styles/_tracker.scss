@@ -1,0 +1,63 @@
+.tracker {
+  .content {
+    padding: 20px;
+    h1 {
+      margin-top: 0;
+    }
+    select {
+      width: 100%
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      li {
+        text-align: center;
+        padding: 5px;
+        div {
+          padding: 13px 5px;
+          border-radius: 50px;
+          cursor: pointer;
+        }
+        .badLog {
+          background-color: $red;
+        }
+        .goodLog {
+          background-color: $green;
+        }
+        .todayLog {
+          background-color: $blue;
+        }
+      }
+      .day {
+        font-weight: bold;
+      }
+    }
+    .input-container {
+      margin-bottom: 10px;
+      label {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      input[type="time"] {
+        float: right;
+      }
+      input[type="range"] {
+        display: block;
+        width: 100%;
+
+      }
+
+    }
+    .viewLog {
+      text-align: center;
+      p {
+        margin-bottom: 15px;
+      }
+
+    }
+    .link {
+      color: $blue;
+    }
+  }
+}

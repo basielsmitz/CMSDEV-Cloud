@@ -1,0 +1,20 @@
+.container {
+  background-color: $white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 25px;
+  overflow: hidden;
+  .scrollable {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+    .content {
+      padding-bottom: 60px;
+    }
+  }
+}

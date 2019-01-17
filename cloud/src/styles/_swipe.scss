@@ -1,0 +1,35 @@
+.swipe {
+  .container {
+    left:3rem;
+    top: 12rem;
+    right:3rem;
+    bottom: unset;
+    .content {
+      img {
+        width: 100%;
+      }
+      .buttons {
+        padding: 20px;
+        button {
+          padding: 15px 15px;
+          background-color: transparent;
+          border: solid 2px;
+          font-weight: bold;
+          font-size: 16pt;
+          border-radius: 15px;
+          cursor: pointer;
+        }
+        .yes {
+          float: right;
+          border-color: $green;
+          color: $green;
+        }
+        .no {
+          border-color: $red;
+          color: $red;
+
+        }
+      }
+    }
+  }
+}
